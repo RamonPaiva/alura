@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
     selector: 'ap-photo',
@@ -6,6 +6,6 @@ import { Component } from "@angular/core";
 })
 
 export class PhotoComponent{
-    url = 'https://http2.mlstatic.com/resident-evil-4-pc-completo-legendado-portugus-c-brinde-D_NQ_NP_643205-MLB26510344008_122017-F.jpg';
-    description = 'Resident Evil 4';
+    @Input() url = '';
+    @Input() description = '';
 }
