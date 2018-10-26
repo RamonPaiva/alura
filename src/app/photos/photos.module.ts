@@ -3,6 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { PhotoComponent } from './photo/photo.component';
 import { PhotoListComponent } from './photo-list/photo-list.component';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -10,7 +11,10 @@ import { PhotoListComponent } from './photo-list/photo-list.component';
         PhotoComponent,
         PhotoListComponent 
     ],
-    imports: [ HttpClientModule ]
+    imports: [ 
+        HttpClientModule,
+        CommonModule
+    ]
 })
 export class PhotosModule {
 
